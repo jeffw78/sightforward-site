@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>SightForward</title>
-<meta name="description" content="SightForward makes iPhone apps that find another way: Lupek, a magnifier you can ask questions, and GlyphMatch, a match three game that never asks you to match colors.">
+<meta name="description" content="SightForward makes iPhone apps that find another way: GlyphMatch, a match three game that never asks you to match colors.">
 <meta property="og:title" content="SightForward">
-<meta property="og:description" content="Technology. Accessibility. Thinking differently. Home of Lupek and GlyphMatch.">
+<meta property="og:description" content="Technology. Accessibility. Thinking differently. Home of GlyphMatch.">
 <meta property="og:image" content="https://getsightforward.com/img/og.png">
 <meta property="og:url" content="https://getsightforward.com/">
 <meta name="twitter:card" content="summary_large_image">
@@ -24,7 +24,7 @@
   --line: #343a42;
   --fg: #eef0f2;
   --muted: #a9b0b8;
-  --accent: #d9874a;      /* Lupek's muted orange */
+  --accent: #d9874a;      /* muted orange */
   --accent-ink: #1a1208;
   --cyan: #5cc4e8;        /* from the SightForward eye */
   --display: "Atkinson Hyperlegible Next", "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -91,11 +91,6 @@ a { color: inherit; }
   display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 56px);
   padding: clamp(24px, 4.5vw, 56px); position: relative; overflow: hidden;
 }
-.plate.lupek::before {
-  content: ""; position: absolute; width: 520px; height: 520px; right: -160px; bottom: -220px; border-radius: 50%;
-  background: radial-gradient(circle, color-mix(in srgb, var(--accent) 22%, transparent), transparent 68%);
-  pointer-events: none;
-}
 .plate > * { position: relative; min-width: 0; }
 .app-head { display: flex; align-items: center; gap: 18px; margin-bottom: 22px; }
 .app-head img { width: 84px; height: 84px; border-radius: 19px; box-shadow: 0 6px 18px rgba(0,0,0,.3); }
@@ -154,7 +149,6 @@ footer a:hover { color: var(--fg); }
   <div class="wrap">
     <a class="brand" href="#top" aria-label="SightForward home"><img src="img/sightforward-logo.png" alt="" width="44" height="44">SightForward</a>
     <nav class="nav" aria-label="Main">
-      <a href="#lupek">Lupek</a>
       <a href="#glyphmatch">GlyphMatch</a>
     </nav>
   </div>
@@ -168,33 +162,6 @@ footer a:hover { color: var(--fg); }
   </section>
 
   <section class="apps wrap" aria-label="Apps">
-    <article class="plate lupek" id="lupek">
-      <div>
-        <div class="app-head">
-          <img src="img/lupek-icon.webp" alt="Lupek app icon" width="84" height="84">
-          <div>
-            <p class="tag">iPhone app</p>
-            <h2>Lupek</h2>
-          </div>
-        </div>
-        <p class="motto">Zoom in. Ask. Understand.</p>
-        <p class="body">A magnifier that answers questions. Point your camera at a receipt, a label, or the fine print on a package, select the part you care about, and ask. Lupek reads it and tells you what it means.</p>
-        <ul class="points">
-          <li><span class="k" aria-hidden="true">1</span><span><b>Select just the part you need.</b> Drag around one line instead of fighting the whole page.</span></li>
-          <li><span class="k" aria-hidden="true">2</span><span><b>Ask in plain words.</b> "What kind of sandpaper did I buy?" works.</span></li>
-          <li><span class="k" aria-hidden="true">3</span><span><b>Keep going.</b> Ask a follow-up, have the answer read aloud, or copy it.</span></li>
-        </ul>
-        <a class="store" href="https://apps.apple.com/us/app/lupek/id6792315589">
-          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="10" cy="10" r="6.5"/><path d="M15 15l6 6"/></svg>
-          Get Lupek on the App Store
-        </a>
-      </div>
-      <div class="shots">
-        <img src="img/lupek-receipt.webp" alt="Lupek showing a store receipt, with the question 'What kind of sandpaper did I buy?' and the answer '60A A/O sandpaper'." width="640" height="1344" loading="lazy">
-        <img src="img/lupek-label.webp" alt="Lupek showing a frozen chicken bag, answering 'What are the heating instructions?' with air fryer steps: 350°F for 8 minutes." width="640" height="1344" loading="lazy">
-      </div>
-    </article>
-
     <article class="plate" id="glyphmatch">
       <div>
         <div class="app-head">
@@ -224,9 +191,7 @@ footer a:hover { color: var(--fg); }
   <div class="wrap">
     <span>© 2026 SightForward · Made by Jeff Wooldridge</span>
     <nav aria-label="Footer">
-      <a href="https://apps.apple.com/us/app/lupek/id6792315589">Lupek</a>
       <a href="https://apps.apple.com/us/app/glyphmatch/id6804458501">GlyphMatch</a>
-      <a href="https://chain-prepared-65d.notion.site/Lupek-Support-3a386a2690b180e18a0de8cea2404ef1">Lupek support</a>
     </nav>
   </div>
 </footer>
